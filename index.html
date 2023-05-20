@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Rancho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Home</title>
+</head>
+<body>
+    
+      <div id="head">
+       <div class="nav">
+        <div class="nav_small">
+            <i onclick='handelbar()' class="fa-solid fa-bars"></i>
+
+            <div class="options">
+                <div><i onclick="closeoption()"  class="fa-solid fa-xmark"></i></div>
+                <div class="profile">
+                 <div>
+                    vikeshvhinge@gmail.com
+                 </div>
+                </div>
+               <div>
+                <i class="fa-solid fa-user-group"></i>
+                About Us
+               </div>
+               <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                my orders
+               </div>
+               <div>
+                <i class="fa-solid fa-note-sticky"></i>
+                feedback
+               </div>
+               <div>
+                <i class="fa-regular fa-heart"></i>
+                my wishlist
+               </div>
+               <hr>
+               <div>
+                <button onclick="logout()" >Logout</button>
+               </div>
+            </div>
+
+          </div>
+        <h1>Celebrare</h1>
+        <div class="nav_big">
+            <p>About Us</p>
+            <p>Feedback</p>
+            <p>Help</p>
+            <button>Login</button>
+        </div>
+       </div>
+        
+
+        <h2>Celebrare</h2>
+        <img src="./images/pngtree-indian-wedding-couple-standing-wearing-sherwani-and-lehenga-png-image_6479857.png" alt="head_img">
+        <p>Super easy to create dream wedding invite ...</p>
+       
+      </div>
+
+      <div id="container"> </div>
+      <div id="footer"></div>
+</body>
+</html>
+<script src="./Scripts/index.js"></script>
+<script type="module">
+    import {footer} from './Scripts/footer.js'
+
+    let Footer = document.querySelector('#footer')
+    Footer.innerHTML=footer()
+</script>

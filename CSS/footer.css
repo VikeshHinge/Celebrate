@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#f_cover{
+    width: 100%;
+    padding: 5px;
+    height: fit-content;
+    background-color: aquamarine;
+    margin-top: 50px;
+    border-radius: 20px 20px 0px 0px;
+}
+#footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#footer p:hover{
+    color: blue;
+}
+
+
+@media (max-width: 767px) {
+
+#footer{
+    flex-direction: column;
+    text-align: start;
+}
+#footer img {
+    width:100px;
+}
+#footer p{
+  text-align: start;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+}
